@@ -25,7 +25,7 @@ export async function fetchAll(): Promise<User[]> {
   return response.data
 }
 
-export async function fetchOne(userId: string): Promise<User[]> {
+export async function fetchOne(userId: string): Promise<User> {
   const response: AxiosResponse = await apiClient.get(`/collaborateur/${userId}`)
   return response.data
 }
